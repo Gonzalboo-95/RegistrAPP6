@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">
+      <img class="img-fluid logo" src="https://duoc.modyocdn.com/uploads/d1065e11-cde5-40b4-b58f-59004919c757/original/logo_duoc.svg" alt="Logo">
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()" color="danger">Cerrar sesión</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Título de bienvenida -->
+  <div class="welcome-container">
+    <h2 [@fadeIn] class="welcome-title">Bienvenido {{ userName }}</h2>
+    <p class="welcome-subtitle">Aplicación para control de asistencia "Docente"</p>
+  </div>
+
+  <!-- Sección del Docente -->
+  <ion-card color="primary" class="custom-card">
+    <div class="image-container">
+      <img alt="Docente" src="assets/images/Docentes.jpg" class="docente-img" />
+      <div class="button-container">
+        <ion-button [@fadeIn] class="custom-button" color="primary" routerLink="/asistencia-docente">Generar QR</ion-button>
+        <ion-button [@fadeIn] class="custom-button" color="secondary" routerLink="/crear-asignatura">Crear Asignatura</ion-button>
+      </div>
+    </div>
+    <ion-card-header>
+      <ion-card-title class="card-title">Registro Asistencia Curso</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="card-content">
+      Bienvenido a RegistAPP6, la aplicación para visualizar las asistencias a clases en DuocUC.
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Listado de Asignaturas -->
+  <ion-card color="light" class="custom-card">
+    <ion-card-header>
+      <ion-card-title>Mis Asignaturas</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let asignatura of asignaturas" class="asignatura-item">
+          <ion-label>{{ asignatura.nombre }}</ion-label>
+          <ion-button fill="clear" color="danger" (click)="eliminarAsignatura(asignatura.id)">Eliminar</ion-button>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

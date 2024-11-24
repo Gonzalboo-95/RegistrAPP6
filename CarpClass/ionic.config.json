@@ -1,0 +1,7 @@
+{
+  "name": "CarpClass",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

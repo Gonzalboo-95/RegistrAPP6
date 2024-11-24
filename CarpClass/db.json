@@ -1,0 +1,72 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "usuario": "docente1@profesor.duoc.cl",
+      "contrasena": "Docente123",
+      "rol": "docente",
+      "nombre": "Juan Pérez"
+    },
+    {
+      "id": "2",
+      "usuario": "docente2@profesor.duoc.cl",
+      "contrasena": "Docente456",
+      "rol": "docente",
+      "nombre": "María López"
+    },
+    {
+      "id": "3",
+      "usuario": "alumno1@duocuc.cl",
+      "contrasena": "Alumno123",
+      "rol": "alumno",
+      "nombre": "Carlos Martínez"
+    },
+    {
+      "id": "4",
+      "usuario": "alumno2@duocuc.cl",
+      "contrasena": "Alumno456",
+      "rol": "alumno",
+      "nombre": "Ana Gómez"
+    }
+  ],
+  "asignaturas": [
+    {
+      "id": "2",
+      "nombre": "Historia 202",
+      "docenteId": 2,
+      "estudiantes": [
+        3
+      ]
+    }
+  ],
+  "sesionesClase": [
+    {
+      "id": "1",
+      "asignaturaId": 1,
+      "fecha": "2024-11-13",
+      "codigoQR": "https://via.placeholder.com/150",
+      "registrosAsistencia": [
+        {
+          "alumnoId": 3,
+          "estado": "presente"
+        },
+        {
+          "alumnoId": 4,
+          "estado": "ausente"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "asignaturaId": 2,
+      "fecha": "2024-11-14",
+      "codigoQR": "https://via.placeholder.com/150",
+      "registrosAsistencia": [
+        {
+          "alumnoId": 3,
+          "estado": "presente"
+        }
+      ]
+    }
+  ]
+}

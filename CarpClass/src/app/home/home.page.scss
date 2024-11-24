@@ -1,0 +1,72 @@
+/* Estilos para la página */
+.welcome-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.welcome-title {
+  font-size: 2rem;
+  color: var(--ion-color-primary);
+  margin-bottom: 10px;
+}
+
+.welcome-subtitle {
+  font-size: 1.1rem;
+  color: var(--ion-color-medium);
+}
+
+.custom-card {
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  position: relative;
+}
+
+.docente-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-button {
+  width: 48%;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  color: var(--ion-color-light);
+}
+
+.card-content {
+  font-size: 1rem;
+  color: var(--ion-color-light);
+  text-align: center;
+}
+
+.asignaturas-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.asignatura-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.asignatura-item ion-button {
+  padding: 0;
+}

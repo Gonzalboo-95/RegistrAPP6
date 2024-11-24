@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">
+      <img class="img-fluid" src="https://duoc.modyocdn.com/uploads/d1065e11-cde5-40b4-b58f-59004919c757/original/logo_duoc.svg" alt="Logo">
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()" color="danger">Cerrar sesión</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h2 [@fadeIn]>Bienvenido {{ userName }}</h2>
+
+  <p>Aplicación para control de asistencia "Estudiante"</p>
+  <ion-card color="primary" class="custom-card">
+    <div class="image-container">
+      <img alt="Estudiantes" src="https://www.duoc.cl/wp-content/uploads/2020/06/alumnos-960x600.jpg" />
+      <div class="button-container">
+        <ion-button [@fadeIn] class="custom-button" color="primary" routerLink="/asistencia-alumno">Estoy presente profesor</ion-button>
+        <ion-button [@fadeIn] class="secondary-button" color="secondary" href="https://experienciavivo.duoc.cl/alumnos/asistencias" target="_blank">Asistencia Completa</ion-button>
+      </div>
+    </div>
+    <ion-card-header>
+      <ion-card-title>Asistencia Alumno</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Bienvenido a RegistAPP6 la aplicación para registrar tu asistencia a clases en DuocUC.
+    </ion-card-content>
+  </ion-card>
+</ion-content>
